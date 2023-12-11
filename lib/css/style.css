@@ -1,0 +1,257 @@
+*{margin:0; padding:0;  font-family: Arial,sans-serif;}
+/* Estilos do calendário */
+
+
+body{
+    overflow-x: hidden;
+}
+#calendar{
+    width: 70%;
+    height: 80vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+/*Estilos do Header / Menu Lateral */
+.logoSmile{
+    display: flex;
+    width: 100px;
+    padding-left: 150px;
+}
+.Perfil{
+    position: relative;
+    display: flex;
+    align-items: center;
+    right: 0;
+    padding: 50px;
+
+}
+.texto{
+    margin-left: 10px;
+}
+.iconePerfil{
+    width: 55px;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #B4E2FF;
+    height: 85px;
+    justify-content: space-between;
+    padding: 0 6.5%;
+
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+    padding-top: -20px;
+    cursor: pointer;
+}
+.botao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 34px;
+}
+nav.infoesquerda{
+    width: 72px;
+    height: 100%;
+    background-color: #B4E2FF;
+    padding: 85px 0px 30px 1%;
+    box-shadow: 3px 0 0 #020203 ;
+    position: fixed;
+    top: 0;
+    transition: .2s;
+}
+nav.infoesquerda.expandir{
+    width: 230px;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu{
+    transition: 0.2s;
+}
+ul li.ativo{
+    background-color: #ffff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #020203;
+}
+ul li.item-menu:hover{
+    border-radius: 30px;
+    box-shadow: 0 0 30px #020203;
+}
+ul li.item-menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 10px 0px 8px;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    overflow: hidden;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+ul li.item-menu a .icon{
+    margin-left: 10px;
+}
+
+/* Estilos formulário de novo agendamento */
+
+
+
+-------------Header-----------------------
+.logoSmile{
+    display: flex;
+
+    width: 135px;
+    padding: 43%;
+}
+@media screen and (max-width: 1366px){
+    .logoSmile{
+        padding: 30%;
+    }
+}
+.Perfil{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right:150px;
+}
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #B4E2FF;
+    height: 85px;
+    justify-content: space-between;
+
+}
+@media  screen and (max-width: 1366px) {
+    .botao{
+        padding: 31px;
+    }
+
+}
+nav.infoesquerda{
+    width: 70px;
+    height: 100%;
+    background-color: #B4E2FF;
+    padding: 85px 0px 30px 1%;
+    box-shadow: 3px 0 0 #020203 ;
+    position: fixed;
+    top: 0;
+    transition: .2s;
+    z-index: 3;
+}
+nav.infoesquerda.expandir{
+    width: 205px;
+    z-index: 3;
+}
+
+--------------Relatorios---------------------
+.loading{
+    position: fixed;
+    background-color: var(--clr-background);
+    transition:var(--transition);
+    width: 100vw;
+    height: 100vh;
+    font-size: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.container{
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 60px;
+    margin-left: 24rem;
+}
+.state-select{
+    font: var(--ts-normal-semibold);
+    background-color: #B4E2FF;
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+    border-radius: 1rem;
+    position: relative;
+    top: 0.5rem ;
+    left: 0.1rem;
+    z-index: 2;
+}
+.status {
+    width: 16rem;
+    display: flex;
+    align-items: center;
+    font-size: 62.5%;
+    font-family: var(--ff);
+    color: var(--clr--font);
+    z-index: 1;
+}
+.data-box__header{
+    font: var(--ts-caption);
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    z-index: 1;
+    text-align: center;
+    padding-left: 2px;
+}
+@media screen and (min-width: 1170px){
+    .data-box--30 {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+}
+@media  screen and (max-width: 1670px) {
+    #chart{
+        padding-left: 10rem;
+    }
+}
+@media  screen and (max-width: 1550px) {
+    #chart{
+        padding-left: 6rem;
+    }
+}
+@media  screen and (max-width: 1450px) {
+    #chart{
+        padding-left: 0.1rem;
+    }
+    .container{
+        margin-left: 22.5rem;
+    }
+}
+
+--------------- financeiro --------------------
+.container {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1366px) {
+    .container{
+        margin-left: 1.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+
+

@@ -1,0 +1,17 @@
+{
+    "name": "smille/agenda",
+    "description": "Agenda de consultas",
+    "authors": [
+        {
+            "name": "Yuri"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "../../class",
+            "Models\\": "../../model"
+        }
+    }
+
+}
